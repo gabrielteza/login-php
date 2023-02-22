@@ -1,5 +1,5 @@
 <?php
-include('conexao.php');
+include('pages/conexao.php');
 
 if(isset($_POST['email']) || isset($_POST['senha'])) {
 
@@ -52,11 +52,11 @@ if(isset($_POST['email']) || isset($_POST['senha'])) {
 
 <form name="form" action="" method="POST">
   <div class="form-field">
-    <input type="text" name="email" placeholder="Email / Username"/>
+    <input type="text" name="email" placeholder="Email"/>
   </div>
   
   <div class="form-field">
-    <input type="password" name="senha" placeholder="Password"/>                         </div>
+    <input type="password" name="senha" placeholder="Senha"/>                         </div>
   
   <div class="form-field">
     <button class="btn"type="submit">Log in</button>
